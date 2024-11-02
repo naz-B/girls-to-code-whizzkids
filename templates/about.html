@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav>
+     <a href="/">home</a>
+    <a href="/game">play game</a>
+    <a href="/about">about</a>
+</nav>
+<div class="content">
+    <h1>about rock paper scissors</h1>
+    <p>The earliest form of "rock paper scissors"-style game originated in
+        China and was subsequently imported into Japan, where it reached its
+        modern standardized form, before being spread throughout the world in the
+        early 20th century. A simultaneous,zero-sum game, it has three possible
+         outcomes: a draw, a win, or a loss.</p>
+
+</div>
+
+<div id="images">
+    <img style="width:400px" src="{{url_for('static', filename='images/rockscissor.jpg')}}"/>
+</div>
+
+</body>
+</html>
